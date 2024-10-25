@@ -10,7 +10,11 @@ public class Example4If {
         if(horas > 7 && horas < 12) {
             System.out.println("Bom dia");
         } else {
-            System.out.println("Boa tarde");
+            if(horas > 12 && horas < 18){
+                System.out.println("Boa tarde");
+            }else {
+                System.out.println("Boa noite");
+            }
         }
         sc.close();
     }
