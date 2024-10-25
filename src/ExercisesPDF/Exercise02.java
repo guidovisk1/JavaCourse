@@ -13,5 +13,6 @@ public class Exercise02 {
         double area = pi * Math.pow(raio,2);
 
         System.out.printf("O valor da área é %.4f", area);
+        sc.close();
     }
 }

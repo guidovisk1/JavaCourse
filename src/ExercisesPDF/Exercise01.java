@@ -12,5 +12,7 @@ public class Exercise01 {
         int resultado = primeiro_numero + segundo_número;
 
         System.out.printf("O valor da soma entre %d e %d é igual a %d", primeiro_numero,segundo_número,resultado);
+
+        sc.close();
     }
 }
