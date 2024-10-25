@@ -9,7 +9,7 @@ public class Example4 {
         int minutos = sc.nextInt();
         double conta = 50;
         if(minutos > 100){
-            conta = conta + (minutos - 100) * 2;
+            conta += (minutos - 100) * 2;
          }
         System.out.printf("Valor da conta a apagar %.2f", conta);
 
