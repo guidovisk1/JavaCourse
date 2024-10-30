@@ -1,26 +1,32 @@
 package Examples;
 
+import TrianguloOOP.Triangulo;
+
 import java.util.Scanner;
 
 public class ExampleNoOOPResolution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        Triangulo x,y;
+        x = new Triangulo();
+        y = new Triangulo();
+
         System.out.println("Enter the measures of triangle X");
-        double aX = sc.nextDouble();
-        double bX = sc.nextDouble();
-        double cX = sc.nextDouble();
+        x.lado_a = sc.nextDouble();
+        x.lado_b = sc.nextDouble();
+        x.lado_c = sc.nextDouble();
 
         System.out.println("Enter the measures of triangle Y");
-        double aY = sc.nextDouble();
-        double bY = sc.nextDouble();
-        double cY = sc.nextDouble();
+        y.lado_a = sc.nextDouble();
+        y.lado_b = sc.nextDouble();
+        y.lado_c = sc.nextDouble();
 
-        double pX = (aX + bX + cX) / 2;
-        double pY = (aY + bY + cY) / 2;
+        double pX = (x.lado_a + x.lado_b + x.lado_c) / 2;
+        double pY = (y.lado_a + y.lado_b + y.lado_c) / 2;
 
-        double areaX = Math.sqrt(pX * (pX - aX) * (pX - bX) * (pX - cX) );
-        double areaY = Math.sqrt(pY * (pY - aY) * (pY - bY) * (pY - cY) );
+        double areaX = Math.sqrt(pX * (pX - x.lado_a) * (pX - x.lado_b) * (pX - x.lado_c) );
+        double areaY = Math.sqrt(pY * (pY - y.lado_a) * (pY - y.lado_b) * (pY - y.lado_c) );
 
         System.out.println("Triangle X area : " + areaX);
         System.out.println("Triangle Y area : " + areaY);
