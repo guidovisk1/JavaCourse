@@ -6,9 +6,12 @@ public class ExampleNoOOPResolution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter the measures of triangle X");
         double aX = sc.nextDouble();
         double bX = sc.nextDouble();
         double cX = sc.nextDouble();
+
+        System.out.println("Enter the measures of triangle Y");
         double aY = sc.nextDouble();
         double bY = sc.nextDouble();
         double cY = sc.nextDouble();
